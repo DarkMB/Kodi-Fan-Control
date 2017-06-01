@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="30000">
+		<setting label="30001" type="number" id="Check_Interval" default="30"/>
+		<setting type="sep"/>
+		<setting label="30002" type="number" id="Control_Pin_3V" default="17"/>
+		<setting label="30003" type="number" id="Control_Pin_5V" default="18"/>
+		<setting type="sep"/>
+		<setting label="30004" type="slider" id="Temperature_3V" default="40" range="20,80" option="int"/>
+		<setting label="30005" type="slider" id="Temperature_5V" default="50" range="20,80" option="int"/>
+		<setting type="sep"/>
+		<setting label="30006" type="bool" id="Display_Info" default="false"/>
+	</category>
+</settings>

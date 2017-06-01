@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="service.fan.control" name="Fan control" version="1.0" provider-name="DarkMB">
+	<requires>
+		<import addon="xbmc.python" version="2.14.0"/>
+	</requires>
+    <extension point="xbmc.service" library="service.py" start="login" />
+	<extension point="xbmc.addon.metadata">
+		<platform>linux</platform>
+		<summary lang="en_GB">Fan control</summary>
+		<description lang="en_GB">With this service you can control a fan to cool down the Raspberry Pi with two diffrent speeds.
+The temperatures for the speeds can be select in °Celsius.
+Also the control pins for the transistors and the time for temerature check can be selected.
+
+When you change the pins please restart the service to initialize the pins.
+
+To use this service, you have to realise also the hardware part.
+For that you need:
+2 Transistor BC639( or equal)
+2 Transistor B640( or equal)
+2 Resistor 1k Ω
+2 Resistor 169 Ω
+1 Diode
+1 Fan 5V
+
+Please check out the circuit diagram for wiring.
+If you use other transistors, adjust the values of the resistors accordingly!</description>
+		<disclaimer lang="en_GB">I am not responsible for any damage that caused by error of the hardware part</disclaimer>
+		<summary lang="de_DE">Fan control</summary>
+		<description lang="de_DE">Mit diesem Service können Sie einen CPU-Kühler kontrollieren, um den Raspberry-Pi mit zwei verschiedenen Geschwindigkeiten abzukühlen.
+Die Temperaturen für die Geschwindigkeiten können in °C gewählt werden.
+Es können auch die Pins für die Transistoren und die Zeit für die Temperaturprüfung ausgewählt werden.
+
+Wenn Sie die Pins wechseln, starten Sie den Service neu, um die Pins zu initialisieren.
+
+Um diesen Service nutzen zu können, müssen Sie auch den Hardware-Teil realisieren.
+Dafür benötigen Sie:
+2 Transistor BC639 (oder gleich NPN)
+2 Transistor B640 (oder gleich PNP)
+2 Widerstand 1k Ω
+2 Widerstand 169 Ω
+1 Diode
+1 Lüfter 5V
+
+Bitte überprüfen Sie den Schaltplan für die Verdrahtung.
+Sollten Sie andere Transistoren verwenden, müssen Sie die Werte der Widerstände entsprechend anpassen!</description>
+		<disclaimer lang="en_GB">Ich bin nicht verantwortlich für irgendwelche Schäden, die durch Fehler des Hardwareteils verursacht wurden</disclaimer>
+		<license>GNU General Public License, v2</license>
+		<language>en de</language>
+		<website>https://DarkMB.de</website>
+		<email>Marcus@DarkMB.de</email>
+		<assets>
+			<icon>icon.png</icon>
+			<screenshot>resources/media/screenshot-01.jpg</screenshot>
+			<screenshot>resources/media/screenshot-02.jpg</screenshot>
+			<screenshot>resources/media/screenshot-03.jpg</screenshot>
+		</assets>
+		<news>1.0 Initial Release</news>
+	</extension>
+</addon>
